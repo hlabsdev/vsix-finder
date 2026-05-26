@@ -1,5 +1,13 @@
 # VSIX Finder
 
+## Live demo
+
+You can use VSIX Finder online here:
+
+[https://vsix-finder.onrender.com](https://vsix-finder.onrender.com)
+
+> Note: the free hosting instance may sleep after inactivity. If the page takes a few seconds to load, wait and refresh once.
+
 **VSIX Finder** (By @[Hlabs](https://github.com/hlabsdev)) is a small local web app that helps you search VS Code extension marketplaces and download extension installer files as `.vsix` packages.
 
 It is useful when you are using a VS Code-compatible IDE such as **Trae**, **Cursor**, **VSCodium**, **code-server**, or another editor where some extensions may not appear in the built-in extension marketplace.
@@ -332,6 +340,21 @@ git push origin feature/my-improvement
 ```
 
 Then open a pull request.
+
+---
+
+## Deploy your own instance
+
+You can deploy your own instance for free on Render.
+
+Recommended settings:
+
+- Runtime: Node
+- Build command: `npm install`
+- Start command: `npm start`
+- Environment variable: none required
+
+The app automatically uses the `PORT` provided by the hosting platform.
 
 ---
 
